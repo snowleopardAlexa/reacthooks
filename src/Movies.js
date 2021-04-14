@@ -6,7 +6,7 @@ function Movies() {
    const [movie, setMovie] = useState("");
    useEffect(() => {
        async function getData() {
-           const response = await axios.get(`http://swap.dev/api/films/${number}/`);
+           const response = await axios.get(`http://swapi.dev/api/films/${number}/`);
            setMovie(response.data);
        }
        getData();
